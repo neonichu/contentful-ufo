@@ -10,6 +10,9 @@
 
 @protocol ContentfulModelObject <NSObject>
 
++(NSArray*)all;
 +(instancetype)modelObjectFromDictionary:(NSDictionary*)dictionary;
+
+-(BOOL)save;
 
 @end

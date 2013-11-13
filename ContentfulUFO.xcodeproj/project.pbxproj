@@ -18,6 +18,8 @@
 		869F71FF183185B10091A32D /* BBUUFOSighting.m in Sources */ = {isa = PBXBuildFile; fileRef = 869F71FE183185B10091A32D /* BBUUFOSighting.m */; };
 		869F720118318BC90091A32D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869F720018318BC90091A32D /* MapKit.framework */; };
 		869F7208183190290091A32D /* BBUUFOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869F7207183190290091A32D /* BBUUFOMapViewController.m */; };
+		869F721018333E070091A32D /* UFO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 869F720E18333E070091A32D /* UFO.xcdatamodeld */; };
+		869F721618334B510091A32D /* ContentfulSyncInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 869F721518334B510091A32D /* ContentfulSyncInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		869F720218318CAF0091A32D /* ContentfulModelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentfulModelObject.h; sourceTree = "<group>"; };
 		869F7206183190290091A32D /* BBUUFOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUUFOMapViewController.h; sourceTree = "<group>"; };
 		869F7207183190290091A32D /* BBUUFOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUUFOMapViewController.m; sourceTree = "<group>"; };
+		869F720F18333E070091A32D /* UFO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UFO.xcdatamodel; sourceTree = "<group>"; };
+		869F721418334B510091A32D /* ContentfulSyncInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContentfulSyncInfo.h; path = Code/ContentfulSyncInfo.h; sourceTree = SOURCE_ROOT; };
+		869F721518334B510091A32D /* ContentfulSyncInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContentfulSyncInfo.m; path = Code/ContentfulSyncInfo.m; sourceTree = SOURCE_ROOT; };
 		B8501C1400FD4CC58CA0889E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BF67155D8F144FECBF8DB29A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +107,8 @@
 				869F71FE183185B10091A32D /* BBUUFOSighting.m */,
 				869F71FA183182D60091A32D /* ContentfulSessionManager.h */,
 				869F71FB183182D60091A32D /* ContentfulSessionManager.m */,
+				869F721418334B510091A32D /* ContentfulSyncInfo.h */,
+				869F721518334B510091A32D /* ContentfulSyncInfo.m */,
 				869F720218318CAF0091A32D /* ContentfulModelObject.h */,
 			);
 			path = Code;
@@ -121,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				869F71DC1831813B0091A32D /* Images.xcassets */,
+				869F720E18333E070091A32D /* UFO.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -229,9 +237,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				869F71DB1831813B0091A32D /* BBUAppDelegate.m in Sources */,
+				869F721618334B510091A32D /* ContentfulSyncInfo.m in Sources */,
 				869F71D71831813B0091A32D /* main.m in Sources */,
 				869F71FC183182D60091A32D /* ContentfulSessionManager.m in Sources */,
 				869F71FF183185B10091A32D /* BBUUFOSighting.m in Sources */,
+				869F721018333E070091A32D /* UFO.xcdatamodeld in Sources */,
 				869F7208183190290091A32D /* BBUUFOMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +379,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		869F720E18333E070091A32D /* UFO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				869F720F18333E070091A32D /* UFO.xcdatamodel */,
+			);
+			currentVersion = 869F720F18333E070091A32D /* UFO.xcdatamodel */;
+			path = UFO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 869F71BF1831813B0091A32D /* Project object */;
 }

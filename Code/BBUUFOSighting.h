@@ -6,12 +6,13 @@
 //  Copyright (c) 2013 Boris Bügling. All rights reserved.
 //
 
+#import <CoreData/CoreData.h>
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
 #import "ContentfulModelObject.h"
 
-@interface BBUUFOSighting : NSObject <ContentfulModelObject, MKAnnotation>
+@interface BBUUFOSighting : NSManagedObject <ContentfulModelObject, MKAnnotation>
 
 @property NSString* sightingDescription;
 @property NSDate* reportedAt;

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3400" systemVersion="13A598" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="BBUUFOSighting" representedClassName="BBUUFOSighting" syncable="YES">
+        <attribute name="coordinateValue" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="reportedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sightedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sightingDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ContentfulSyncInfo" representedClassName="ContentfulSyncInfo" syncable="YES">
+        <attribute name="nextSyncUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="space" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BBUUFOSighting" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="ContentfulSyncInfo" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>

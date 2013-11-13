@@ -154,7 +154,7 @@
     [self.view addSubview:self.textView];
     
     NSInteger index = [self.mapView.annotations indexOfObject:view.annotation] + 1;
-    self.title = [NSString stringWithFormat:@"%d of %d sightings", index, self.mapView.annotations.count];
+    self.title = [NSString stringWithFormat:@"%ld of %lu sightings", (long)index, (unsigned long)self.mapView.annotations.count];
 }
 
 #pragma mark - UISearchBar delegate methods

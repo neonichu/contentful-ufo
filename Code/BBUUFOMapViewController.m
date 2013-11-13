@@ -43,10 +43,10 @@
 }
 
 -(void)nextTapped {
-    NSInteger currentIndex = [self.items indexOfObject:[[self.mapView selectedAnnotations] firstObject]];
+    NSInteger currentIndex = [self.mapView.annotations indexOfObject:[[self.mapView selectedAnnotations] firstObject]];
     currentIndex++;
     
-    if (currentIndex < self.items.count) {
+    if (currentIndex < self.mapView.annotations.count) {
         [self.mapView selectAnnotation:self.mapView.annotations[currentIndex] animated:YES];
     } else {
         [self.mapView selectAnnotation:[self.mapView.annotations firstObject] animated:YES];
